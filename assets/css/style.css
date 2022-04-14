@@ -1,0 +1,108 @@
+:root {
+  --border-radius: 10px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+table {
+  width: 100%;
+  max-width: 830px;
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: #ececec;
+}
+
+thead {
+  font-weight: bold;
+  color: white;
+}
+
+tbody th {
+  text-align: left;
+  padding-left: 20px;
+}
+
+th:first-child::first-letter {
+  text-transform: uppercase;
+}
+
+td::first-letter {
+  text-transform: uppercase;
+}
+
+thead th:first-child {
+  vertical-align: middle;
+  background-color: #787faa;
+}
+
+thead th:nth-child(2) {
+  background-color: #525a8d;
+}
+
+thead th:nth-child(3) {
+  background-color: #353873;
+}
+
+thead th:nth-child(4) {
+  background-color: #212157;
+}
+
+thead th:last-child {
+  background-color: #13103c;
+}
+
+tbody tr:nth-child(odd) :nth-child(odd),
+tfoot tr:nth-child(odd) :nth-child(odd) {
+  background-color: #dbdbdb;
+}
+
+tbody tr:nth-child(even) td:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+th p:first-child {
+  padding-top: 10px;
+}
+
+th p:last-child {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+th p:nth-child(2) {
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+td:nth-child(n+2) {
+  padding: 10px 0;
+  text-align: center;
+}
+
+button {
+  padding: 5px 15px;
+  border: 1px solid gray;
+  background-color: #d1d1d1;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+button:focus {
+  position: relative;
+  bottom: 3px;
+  box-shadow: 0 0 5px black;
+  outline: none;
+}
+
+button:active {
+  top: 6px;
+  outline: none;
+  border: none;
+  background-color: white;
+}
